@@ -170,7 +170,10 @@ const App = () => {
         await signInWithEmailAndPassword(auth, email, senha);
         setView('admin');
       } catch (error) {
-        alert('Email ou senha incorretos!');
+        console.error('ERRO COMPLETO:', error);
+        console.error('Código do erro:', error.code);
+        console.error('Mensagem:', error.message);
+        alert('Erro: ' + error.code);
       }
     };
 
