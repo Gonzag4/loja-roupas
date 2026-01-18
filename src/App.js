@@ -27,7 +27,7 @@ const App = () => {
   const [categoriaFiltro, setCategoriaFiltro] = useState('Todos');
   const [pedidos, setPedidos] = useState([]);
 
- const ADMIN_EMAIL = 'admin@admin.com';
+ const ADMIN_EMAIL = 'gonzagaluiz931@gmail.com';
 
   useEffect(() => {
     carregarProdutos();
